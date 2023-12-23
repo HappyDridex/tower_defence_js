@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+}
+
+.gameScreenBlock {
+    width: 1920px;
+    height: 1088px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.resoursesBlock {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+    height: 80px;
+    text-align: end;
+    font-family: 'Mansalva', cursive;
+    line-height: 80px;
+    font-size: 70px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px black;
+    color: aliceblue;
+    background: linear-gradient(
+        to left bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.healthAndCoins {
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.wave {
+    margin-right: 50px;
+}
+
+.icons {
+    width: 80px;
+    height: 80px;
+}
+
+#gameOver {
+    display: none;
+    color: aliceblue;
+    font-size: 150px;
+    font-family: 'Mansalva', cursive;
+    font-weight: 700;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mageChooseBlock {
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mageChoose {
+    height: 150px;
+    border: 2px red solid;
+}
+
+.mageChooseBlockChosen {
+    background-color: red;
+}
+
+.mageImg {
+    width: 120px;
+    height: 120px;
+}
+
+.mageImg:hover {
+    width: 150px;
+    height: 150px;
+}
+
+.mageImg:focus {
+    width: 150px;
+    height: 150px;
+}

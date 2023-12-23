@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mages VS Terrorists</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas> </canvas>
+    <div class="gameScreenBlock">
+      <div class="resoursesBlock">
+        <div class="healthAndCoins">
+          <div class="wave">
+            Wave:<span id="waveNumber"></span>/<span id="maxWaveNumber"></span>
+          </div>
+          <div><img src="./img/heartIcon.png" class="icons" alt="" /></div>
+          <div><span id="healthCount"></span></div>
+          <div><img src="./img/coinIcon.png" class="icons" alt="" /></div>
+          <div><span id="coinCount"></span></div>
+        </div>
+      </div>
+      <div id="gameOver"><span id="gameResult"></span></div>
+    </div>
+    <div class="mageChooseBlock">
+      <div class="mageChoose" id="fireMage">
+        <img src="./img/mage1.png" class="mageImg" alt="" />
+      </div>
+      <div class="mageChoose" id="lightningMage">
+        <img src="./img/mage2.png" class="mageImg" alt="" />
+      </div>
+    </div>
+
+    <script src="skins.js"></script>
+    <script src="classes.js"></script>
+    <script src="mageplaces.js"></script>
+    <script src="waypoints.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
